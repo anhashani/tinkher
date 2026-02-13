@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Issue Reporter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>City Issue Reporter</h1>
+  
+  <form id="complaintForm">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    
+    <label for="category">Issue Type:</label><br>
+    <select id="category" name="category" required>
+      <option value="">Select Issue Type</option>
+      <option value="garbage">Garbage</option>
+      <option value="pothole">Pothole</option>
+      <option value="water_leakage">Water Leakage</option>
+      <option value="street_light">Street Light</option>
+    </select><br><br>
+    
+    <label for="description">Issue Description:</label><br>
+    <textarea id="description" name="description" placeholder="Describe the issue" required></textarea><br><br>
+    
+    <button type="submit">Submit Complaint</button>
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+</html>
