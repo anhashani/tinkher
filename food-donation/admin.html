@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+<link rel="stylesheet" href="style.css">
+<script src="food.js"></script>
+</head>
+
+<body>
+
+<a href="food.html" class="back-button">⬅ Back</a>
+
+<div class="page-container">
+
+<h1>Food Donation - Admin</h1>
+
+<div class="option-box">
+<textarea id="details" placeholder="Food Details"></textarea>
+</div>
+
+<div class="option-box">
+<input type="text" id="location" placeholder="Pickup Location">
+</div>
+
+<div class="option-box">
+<label>Manufacture Time</label><br>
+<input type="datetime-local" id="mfg">
+</div>
+
+<div class="option-box">
+<label>Expire Time</label><br>
+<input type="datetime-local" id="exp">
+</div>
+
+<button onclick="saveFood()">Submit</button>
+<p id="msg"></p>
+
+</div>
+</body>
+</html>

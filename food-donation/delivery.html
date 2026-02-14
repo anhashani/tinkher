@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Volunteers</title>
+<link rel="stylesheet" href="style.css">
+<script src="volunteer.js"></script>
+</head>
+
+<body onload="loadVolunteers()">
+
+<a href="index.html" class="back-button">⬅ Back</a>
+
+<div class="page-container">
+
+<h1>Delivery Volunteers</h1>
+
+<div class="option-box"><input id="vname" placeholder="Name"></div>
+<div class="option-box"><input id="vloc" placeholder="Location"></div>
+<div class="option-box"><input id="vtime" placeholder="Available Time"></div>
+
+<button onclick="saveVolunteer()">Submit</button>
+
+<div id="volunteerList"></div>
+
+</div>
+</body>
+</html>

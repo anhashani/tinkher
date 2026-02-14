@@ -1,0 +1,148 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background: linear-gradient(135deg,#1f4037,#99f2c8);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+
+/* Glass container */
+.page-container{
+  width:90%;
+  max-width:900px;
+  padding:40px;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(15px);
+  border-radius:20px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+  text-align:center;
+  margin:40px 0;
+  animation:fadeIn 1s ease-in-out;
+}
+
+/* Heading */
+h1{
+  font-size:32px;
+  margin-bottom:25px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+/* Menu Cards */
+.menu-container{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.menu-card{
+  padding:25px 45px;
+  background:linear-gradient(135deg,#ff6a00,#ee0979);
+  border-radius:18px;
+  text-decoration:none;
+  color:#fff;
+  font-size:18px;
+  font-weight:600;
+  transition:0.4s;
+  box-shadow:0 6px 20px rgba(0,0,0,0.3);
+}
+
+.menu-card:hover{
+  transform:translateY(-8px) scale(1.05);
+  box-shadow:0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* Option Boxes */
+.option-box{
+  background:rgba(255,255,255,0.2);
+  padding:20px;
+  margin:18px auto;
+  border-radius:15px;
+  width:100%;
+  transition:0.3s;
+}
+
+.option-box:hover{
+  transform:scale(1.02);
+  background:rgba(255,255,255,0.3);
+}
+
+/* Inputs */
+input,textarea{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+  margin-top:8px;
+  font-size:14px;
+}
+
+/* Buttons */
+button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  font-size:15px;
+  font-weight:600;
+  background:linear-gradient(135deg,#36d1dc,#5b86e5);
+  color:#fff;
+  cursor:pointer;
+  transition:0.4s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover{
+  transform:scale(1.05);
+  box-shadow:0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Back Button */
+.back-button{
+  position:fixed;
+  top:20px;
+  right:25px;
+  background:linear-gradient(135deg,#ff512f,#dd2476);
+  padding:10px 15px;
+  border-radius:20px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.back-button:hover{
+  transform:scale(1.1);
+}
+
+/* Helpline Box */
+.helpline{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  background:rgba(0,0,0,0.4);
+  padding:15px;
+  border-radius:15px;
+  font-size:13px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Animation */
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}

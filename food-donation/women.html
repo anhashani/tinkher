@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Women Business</title>
+<link rel="stylesheet" href="style.css">
+<script src="women.js"></script>
+</head>
+
+<body onload="loadBusiness()">
+
+<a href="index.html" class="back-button">⬅ Back</a>
+
+<div class="page-container">
+
+<h1>Women Business</h1>
+
+<div class="option-box">
+<input id="name" placeholder="Business Name">
+</div>
+
+<div class="option-box">
+<input id="category" placeholder="Category">
+</div>
+
+<div class="option-box">
+<textarea id="foodDetails" placeholder="Food Details"></textarea>
+</div>
+
+<div class="option-box">
+<input type="number" id="price" placeholder="Price">
+</div>
+
+<div class="option-box">
+<input id="contact" placeholder="Contact & Location">
+</div>
+
+<div class="option-box">
+<label>Manufacture Time</label>
+<input type="datetime-local" id="mfg">
+</div>
+
+<div class="option-box">
+<label>Expire Time</label>
+<input type="datetime-local" id="exp">
+</div>
+
+<button onclick="saveBusiness()">Submit</button>
+
+<p id="msg"></p>
+
+<h2 style="margin-top:30px;">Available Businesses</h2>
+<div id="businessList"></div>
+
+</div>
+
+</body>
+</html>
